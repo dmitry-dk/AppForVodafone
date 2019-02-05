@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4266B77B2208FA8700435CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B77A2208FA8700435CA9 /* AppDelegate.swift */; };
+		4266B7802208FA8700435CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4266B77E2208FA8700435CA9 /* Main.storyboard */; };
+		4266B7822208FA8D00435CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4266B7812208FA8D00435CA9 /* Assets.xcassets */; };
+		4266B7852208FA8D00435CA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4266B7832208FA8D00435CA9 /* LaunchScreen.storyboard */; };
+		4266B7902208FA8D00435CA9 /* AppForVodafonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B78F2208FA8D00435CA9 /* AppForVodafonTests.swift */; };
+		4266B7A02208FB7500435CA9 /* branches.png in Resources */ = {isa = PBXBuildFile; fileRef = 4266B79A2208FB7200435CA9 /* branches.png */; };
+		4266B7A12208FB7500435CA9 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4266B79B2208FB7300435CA9 /* star.png */; };
+		4266B7A22208FB7500435CA9 /* commits.png in Resources */ = {isa = PBXBuildFile; fileRef = 4266B79C2208FB7300435CA9 /* commits.png */; };
+		4266B7A32208FB7500435CA9 /* fork.png in Resources */ = {isa = PBXBuildFile; fileRef = 4266B79D2208FB7400435CA9 /* fork.png */; };
+		4266B7A42208FB7500435CA9 /* logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4266B79E2208FB7400435CA9 /* logo.jpeg */; };
+		4266B7A52208FB7500435CA9 /* gthub.png in Resources */ = {isa = PBXBuildFile; fileRef = 4266B79F2208FB7500435CA9 /* gthub.png */; };
+		4266B7AB2208FBB600435CA9 /* ViewListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A62208FBB600435CA9 /* ViewListController.swift */; };
+		4266B7AC2208FBB600435CA9 /* ViewListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A62208FBB600435CA9 /* ViewListController.swift */; };
+		4266B7AD2208FBB600435CA9 /* ViewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A72208FBB600435CA9 /* ViewItemController.swift */; };
+		4266B7AE2208FBB600435CA9 /* ViewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A72208FBB600435CA9 /* ViewItemController.swift */; };
+		4266B7AF2208FBB600435CA9 /* ViewLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A82208FBB600435CA9 /* ViewLoginController.swift */; };
+		4266B7B02208FBB600435CA9 /* ViewLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A82208FBB600435CA9 /* ViewLoginController.swift */; };
+		4266B7B12208FBB600435CA9 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A92208FBB600435CA9 /* Repositories.swift */; };
+		4266B7B22208FBB600435CA9 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A92208FBB600435CA9 /* Repositories.swift */; };
+		4266B7B32208FBB600435CA9 /* RepoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7AA2208FBB600435CA9 /* RepoItem.swift */; };
+		4266B7B42208FBB600435CA9 /* RepoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7AA2208FBB600435CA9 /* RepoItem.swift */; };
+		4266B7B52209104100435CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4266B77E2208FA8700435CA9 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4266B78C2208FA8D00435CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4266B76F2208FA8600435CA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4266B7762208FA8700435CA9;
+			remoteInfo = AppForVodafon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4266B7772208FA8700435CA9 /* AppForVodafone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForVodafone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4266B77A2208FA8700435CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4266B77F2208FA8700435CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4266B7812208FA8D00435CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4266B7842208FA8D00435CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4266B7862208FA8D00435CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4266B78B2208FA8D00435CA9 /* AppForVodafoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppForVodafoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4266B78F2208FA8D00435CA9 /* AppForVodafonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppForVodafonTests.swift; sourceTree = "<group>"; };
+		4266B7912208FA8D00435CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4266B79A2208FB7200435CA9 /* branches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = branches.png; sourceTree = "<group>"; };
+		4266B79B2208FB7300435CA9 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		4266B79C2208FB7300435CA9 /* commits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commits.png; sourceTree = "<group>"; };
+		4266B79D2208FB7400435CA9 /* fork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fork.png; sourceTree = "<group>"; };
+		4266B79E2208FB7400435CA9 /* logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpeg; sourceTree = "<group>"; };
+		4266B79F2208FB7500435CA9 /* gthub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gthub.png; sourceTree = "<group>"; };
+		4266B7A62208FBB600435CA9 /* ViewListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewListController.swift; sourceTree = "<group>"; };
+		4266B7A72208FBB600435CA9 /* ViewItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewItemController.swift; sourceTree = "<group>"; };
+		4266B7A82208FBB600435CA9 /* ViewLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLoginController.swift; sourceTree = "<group>"; };
+		4266B7A92208FBB600435CA9 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		4266B7AA2208FBB600435CA9 /* RepoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4266B7742208FA8700435CA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4266B7882208FA8D00435CA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4266B76E2208FA8600435CA9 = {
+			isa = PBXGroup;
+			children = (
+				4266B7792208FA8700435CA9 /* AppForVodafone */,
+				4266B78E2208FA8D00435CA9 /* AppForVodafoneTests */,
+				4266B7782208FA8700435CA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4266B7782208FA8700435CA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4266B7772208FA8700435CA9 /* AppForVodafone.app */,
+				4266B78B2208FA8D00435CA9 /* AppForVodafoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4266B7792208FA8700435CA9 /* AppForVodafone */ = {
+			isa = PBXGroup;
+			children = (
+				4266B77A2208FA8700435CA9 /* AppDelegate.swift */,
+				4266B7AA2208FBB600435CA9 /* RepoItem.swift */,
+				4266B7A92208FBB600435CA9 /* Repositories.swift */,
+				4266B7A72208FBB600435CA9 /* ViewItemController.swift */,
+				4266B7A62208FBB600435CA9 /* ViewListController.swift */,
+				4266B7A82208FBB600435CA9 /* ViewLoginController.swift */,
+				4266B77E2208FA8700435CA9 /* Main.storyboard */,
+				4266B7812208FA8D00435CA9 /* Assets.xcassets */,
+				4266B79A2208FB7200435CA9 /* branches.png */,
+				4266B79C2208FB7300435CA9 /* commits.png */,
+				4266B79D2208FB7400435CA9 /* fork.png */,
+				4266B79F2208FB7500435CA9 /* gthub.png */,
+				4266B79E2208FB7400435CA9 /* logo.jpeg */,
+				4266B79B2208FB7300435CA9 /* star.png */,
+				4266B7832208FA8D00435CA9 /* LaunchScreen.storyboard */,
+				4266B7862208FA8D00435CA9 /* Info.plist */,
+			);
+			path = AppForVodafone;
+			sourceTree = "<group>";
+		};
+		4266B78E2208FA8D00435CA9 /* AppForVodafoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				4266B78F2208FA8D00435CA9 /* AppForVodafonTests.swift */,
+				4266B7912208FA8D00435CA9 /* Info.plist */,
+			);
+			path = AppForVodafoneTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4266B7762208FA8700435CA9 /* AppForVodafone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4266B7942208FA8D00435CA9 /* Build configuration list for PBXNativeTarget "AppForVodafone" */;
+			buildPhases = (
+				4266B7732208FA8700435CA9 /* Sources */,
+				4266B7742208FA8700435CA9 /* Frameworks */,
+				4266B7752208FA8700435CA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppForVodafone;
+			productName = AppForVodafon;
+			productReference = 4266B7772208FA8700435CA9 /* AppForVodafone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4266B78A2208FA8D00435CA9 /* AppForVodafoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4266B7972208FA8D00435CA9 /* Build configuration list for PBXNativeTarget "AppForVodafoneTests" */;
+			buildPhases = (
+				4266B7872208FA8D00435CA9 /* Sources */,
+				4266B7882208FA8D00435CA9 /* Frameworks */,
+				4266B7892208FA8D00435CA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4266B78D2208FA8D00435CA9 /* PBXTargetDependency */,
+			);
+			name = AppForVodafoneTests;
+			productName = AppForVodafonTests;
+			productReference = 4266B78B2208FA8D00435CA9 /* AppForVodafoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4266B76F2208FA8600435CA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Dmitro Kalmykov";
+				TargetAttributes = {
+					4266B7762208FA8700435CA9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4266B78A2208FA8D00435CA9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4266B7762208FA8700435CA9;
+					};
+				};
+			};
+			buildConfigurationList = 4266B7722208FA8600435CA9 /* Build configuration list for PBXProject "AppForVodafone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4266B76E2208FA8600435CA9;
+			productRefGroup = 4266B7782208FA8700435CA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4266B7762208FA8700435CA9 /* AppForVodafone */,
+				4266B78A2208FA8D00435CA9 /* AppForVodafoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4266B7752208FA8700435CA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4266B7852208FA8D00435CA9 /* LaunchScreen.storyboard in Resources */,
+				4266B7A32208FB7500435CA9 /* fork.png in Resources */,
+				4266B7A12208FB7500435CA9 /* star.png in Resources */,
+				4266B7A52208FB7500435CA9 /* gthub.png in Resources */,
+				4266B7A02208FB7500435CA9 /* branches.png in Resources */,
+				4266B7822208FA8D00435CA9 /* Assets.xcassets in Resources */,
+				4266B7A22208FB7500435CA9 /* commits.png in Resources */,
+				4266B7A42208FB7500435CA9 /* logo.jpeg in Resources */,
+				4266B7802208FA8700435CA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4266B7892208FA8D00435CA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4266B7B52209104100435CA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4266B7732208FA8700435CA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4266B7AF2208FBB600435CA9 /* ViewLoginController.swift in Sources */,
+				4266B7B12208FBB600435CA9 /* Repositories.swift in Sources */,
+				4266B7B32208FBB600435CA9 /* RepoItem.swift in Sources */,
+				4266B7AD2208FBB600435CA9 /* ViewItemController.swift in Sources */,
+				4266B7AB2208FBB600435CA9 /* ViewListController.swift in Sources */,
+				4266B77B2208FA8700435CA9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4266B7872208FA8D00435CA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4266B7B02208FBB600435CA9 /* ViewLoginController.swift in Sources */,
+				4266B7B22208FBB600435CA9 /* Repositories.swift in Sources */,
+				4266B7B42208FBB600435CA9 /* RepoItem.swift in Sources */,
+				4266B7AE2208FBB600435CA9 /* ViewItemController.swift in Sources */,
+				4266B7AC2208FBB600435CA9 /* ViewListController.swift in Sources */,
+				4266B7902208FA8D00435CA9 /* AppForVodafonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4266B78D2208FA8D00435CA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4266B7762208FA8700435CA9 /* AppForVodafone */;
+			targetProxy = 4266B78C2208FA8D00435CA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4266B77E2208FA8700435CA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4266B77F2208FA8700435CA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4266B7832208FA8D00435CA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4266B7842208FA8D00435CA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4266B7922208FA8D00435CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4266B7932208FA8D00435CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4266B7952208FA8D00435CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppForVodafone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristallight.AppForVodafone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4266B7962208FA8D00435CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppForVodafone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristallight.AppForVodafone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4266B7982208FA8D00435CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppForVodafoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristallight.AppForVodafoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppForVodafone.app/AppForVodafone";
+			};
+			name = Debug;
+		};
+		4266B7992208FA8D00435CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppForVodafoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristallight.AppForVodafoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppForVodafone.app/AppForVodafone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4266B7722208FA8600435CA9 /* Build configuration list for PBXProject "AppForVodafone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4266B7922208FA8D00435CA9 /* Debug */,
+				4266B7932208FA8D00435CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4266B7942208FA8D00435CA9 /* Build configuration list for PBXNativeTarget "AppForVodafone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4266B7952208FA8D00435CA9 /* Debug */,
+				4266B7962208FA8D00435CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4266B7972208FA8D00435CA9 /* Build configuration list for PBXNativeTarget "AppForVodafoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4266B7982208FA8D00435CA9 /* Debug */,
+				4266B7992208FA8D00435CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4266B76F2208FA8600435CA9 /* Project object */;
+}
