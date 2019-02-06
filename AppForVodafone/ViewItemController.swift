@@ -29,11 +29,18 @@ class ViewItemController: UIViewController {
         self.navigationItem.title = repo!.name
         starLabel.text = "\(repo!.stars)"
         forkLabel.text = "\(repo!.forks)"
-        commitsLabel.text = "\(repo!.commits < 0 ? 0: repo!.commits) commit" + (repo!.commits > 1 ? "s": "" )
+
+        commitsLabel.text = "\(repo!.commits) commit" + (repo!.commits > 1 ? "s": "" )
+        if repo!.commits < 0 {
+            commitsLabel.text = "- commit"
+        }
+        
         branchesLabel.text = "\(repo!.branches < 0 ? 0: repo!.branches) branch" + (repo!.branches > 1 ? "es": "" )
+        if repo!.branches < 0 {
+            commitsLabel.text = "- branch"
+        }
+
         descriptionText.text = repo!.description
     }
-    
-    
 }
 
