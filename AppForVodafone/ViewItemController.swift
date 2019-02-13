@@ -17,7 +17,7 @@ class ViewItemController: UIViewController {
     @IBOutlet weak var branchesLabel: UILabel!
     @IBOutlet weak var descriptionText: UITextView!
     
-    var repo:RepoItem? = nil
+    weak var repo:RepoItem? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()

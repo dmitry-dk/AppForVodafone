@@ -51,28 +51,28 @@ class ViewListController: UITableViewController, UITextFieldDelegate {
         
         self.dataArray.removeAll()
         
-        repositories.searchReposFor(textField.text!){
+        repositories.searchReposFor(textField.text!){ [weak self]
             results, error in
 
             activityIndicator.removeFromSuperview()
 
             if let error = error {
 
-                self.tableView?.reloadData()
+                self?.tableView?.reloadData()
                 
                 let alert = UIAlertController(title: error.domain, message: error.userInfo[NSLocalizedFailureReasonErrorKey] as? String, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                     debugPrint("Error searching : \(error)")
                 }))
-                self.present(alert, animated: true, completion: nil)
+                self?.present(alert, animated: true, completion: nil)
                 
                 return
             }
 
             if let retValues = results {
                 debugPrint("Found \(retValues.results.count) matching \(retValues.repoUserName)")
-                self.dataArray = retValues.results
-                self.tableView?.reloadData()
+                self?.dataArray = retValues.results
+                self?.tableView?.reloadData()
             }
         }
         
