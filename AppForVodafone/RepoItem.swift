@@ -30,18 +30,18 @@ class RepoItem{
     
     func countCommitsAndBranches(){
 
-        loadCommits({ (value, error) in
+        loadCommits({ [weak self] (value, error) in
             if let error = error {
                 debugPrint("Error searching : \(error.description)")
             }
-            self.commits = value
+            self?.commits = value
         })
 
-        loadBranches({ (value, error) in
+        loadBranches({ [weak self] (value, error) in
             if let error = error {
                 debugPrint("Error searching : \(error.description)")
             }
-            self.branches = value
+            self?.branches = value
         })
     }
     
