@@ -11,74 +11,97 @@ import UIKit
 
 class ViewListController: UITableViewController, UITextFieldDelegate {
 
-    fileprivate let reuseIdentifier =  "RepoCell"
-    fileprivate var dataArray = [RepoItem]()
+    @IBOutlet weak var userNameTextField: UITextField!
     
-    // MARK: - DataSource
+    fileprivate let reuseIdentifier = "RepoCell"
+    fileprivate let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    fileprivate let dataController = ReposDataController()
+
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(dataWillStartReload), name: Notification.Name(rawValue: reloadDataWillStartNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(dataDidEndReload), name: Notification.Name(rawValue: reloadDataDidEndNotification), object: nil)
+    }
+    
+    fileprivate func reloadData(){
+        
+        guard let tableView = (self.view as? UITableView) else {
+            return
+        }
+        
+        tableView.reloadData()
+    }
+
+
+    
+    // MARK: Delegates
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataArray.count
+        return dataController.count
     }
     
-    // MARK: Delegates
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell =  tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) 
         
-        let repoItem = repoFor(indexPath)
+        let repoItem = dataController.repoFor(indexPath)
         cell.textLabel?.text = repoItem.name
         
         return cell
     }
 
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 40.0;
-//    }
     
     // MARK: TextField
-
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        textField.addSubview(activityIndicator)
-        activityIndicator.frame = textField.bounds
-        activityIndicator.startAnimating()
-        
-        self.dataArray.removeAll()
-        
-        repositories.searchReposFor(textField.text!){ [weak self]
-            results, error in
-
-            activityIndicator.removeFromSuperview()
-
-            if let error = error {
-
-                self?.tableView?.reloadData()
-                
-                let alert = UIAlertController(title: error.domain, message: error.userInfo[NSLocalizedFailureReasonErrorKey] as? String, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                    debugPrint("Error searching : \(error)")
-                }))
-                self?.present(alert, animated: true, completion: nil)
-                
-                return
-            }
-
-            if let retValues = results {
-                debugPrint("Found \(retValues.results.count) matching \(retValues.repoUserName)")
-                self?.dataArray = retValues.results
-                self?.tableView?.reloadData()
-            }
+        guard let text = textField.text, text.count > 0 else {
+            return false
         }
         
+        dataController.newSearch(text)
+        
         textField.resignFirstResponder()
+
         return true
     }
+    
+    // MARK: DataController notification
+
+    @objc func dataWillStartReload(notification: NSNotification) {
+
+        userNameTextField.addSubview(activityIndicator)
+        activityIndicator.frame = userNameTextField.bounds
+        activityIndicator.startAnimating()
+    }
+
+    @objc func dataDidEndReload(notification: Notification){
+        
+        activityIndicator.stopAnimating()
+        activityIndicator.removeFromSuperview()
+        reloadData()
+
+        if let error = notification.object as? NSError {
+            let alert = UIAlertController(title: error.domain, message: error.userInfo[NSLocalizedFailureReasonErrorKey] as? String, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                debugPrint("Error searching : \(error)")
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -87,15 +110,8 @@ class ViewListController: UITableViewController, UITextFieldDelegate {
         }
         
         if let indexPath = self.tableView?.indexPathForSelectedRow {
-            let repo = repoFor(indexPath)
+            let repo = dataController.repoFor(indexPath)
             nextVC.repo = repo
         }
-    }
-}
-
-extension ViewListController {
-    
-    func repoFor(_ indexPath: IndexPath) -> RepoItem {
-        return dataArray[indexPath.row]
     }
 }

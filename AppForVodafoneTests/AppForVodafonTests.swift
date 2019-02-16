@@ -9,16 +9,17 @@
 import XCTest
 @testable import AppForVodafone
 
-let repositories = Repositories()
+let gitHubMng = GitHubRequestManager("https://api.github.com")
 
 class AppForVodafonTests: XCTestCase {
     
     var repo:RepoItem!
-    
+    let testString = "test string"
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        repo = RepoItem(name: "facebook", full_name: "facebook/codemod", created_at: "", stars: 5, forks: 5, description: "")
+        repo = RepoItem(name: "Alamofire", full_name: "Alamofire/Alamofire", created_at: "", stars: 5, forks: 5, description: "")
 
     }
     
@@ -29,9 +30,9 @@ class AppForVodafonTests: XCTestCase {
     }
     
     
-    func testSearchURLForUser(){
+    func testSearchURLReposFor(){
         
-        let theUrl = repositories.searchURLForUser("facebook")
+        let theUrl = gitHubMng.searchURLReposFor("Alamofire")
         
         XCTAssertNotNil(theUrl)
     }
@@ -43,7 +44,7 @@ class AppForVodafonTests: XCTestCase {
         
         var testDataArray = [RepoItem]()
 
-        repositories.searchReposFor("facebook"){ results, error in
+        gitHubMng.searchReposFor("Alamofire"){ results, error in
             
             exp.fulfill()
             
@@ -55,7 +56,7 @@ class AppForVodafonTests: XCTestCase {
         
         waitForExpectations(timeout: 3)
         
-        XCTAssertEqual(testDataArray.count, 30, "We should have loaded exactly 30 facebook repositories.")
+        XCTAssertEqual(testDataArray.count, 6, "We should have loaded exactly 6 Alamofire repositories.")
     }
     
     func testCountCommitsForRepoItem(){
@@ -64,11 +65,11 @@ class AppForVodafonTests: XCTestCase {
         
         self.repo.commits = -1
         
-        self.repo.loadCommits({ (value, error) in
+        gitHubMng.loadCommits(self.repo.full_name){ (value, error) in
             exp.fulfill()
             self.repo.commits = value
             
-        })
+        }
         
         waitForExpectations(timeout: 3)
         
@@ -81,11 +82,10 @@ class AppForVodafonTests: XCTestCase {
 
         self.repo.branches = -1
 
-        self.repo.loadBranches({ (value, error) in
+        gitHubMng.loadBranches(self.repo.full_name){ (value, error) in
             exp.fulfill()
             self.repo.branches = value
-            
-        })
+        }
         
         waitForExpectations(timeout: 3)
         
@@ -95,11 +95,11 @@ class AppForVodafonTests: XCTestCase {
     func testLoginToGitHub(){
         let exp = expectation(description: "Loading Pepository Commits")
         
-        let login = "username"  //set valid username and password for test
+        let login = "username"  //setup valid github username and password for test
         let password = "password"
         var retValues: String?
         
-        repositories.loginGitHub(login,password){ result, error in
+        gitHubMng.loginGitHub(login,password){ result, error in
             
             exp.fulfill()
             
@@ -118,25 +118,23 @@ class AppForVodafonTests: XCTestCase {
     
     func testToBase64(){
         
-        let testString = "test string".toBase64()
+        let resultTestString = testString.toBase64()
         
-//        print("STR = \(testString)")
+ //       print("STR = \(resultTestString)")
         
-        XCTAssertNotNil(testString)
+        XCTAssertTrue(resultTestString.count>0,  "We should get valid string.count > 0.")
     }
     
     func testFromBase64(){
         
         let testEndString = "dGVzdCBzdHJpbmc=".fromBase64()
-        
+
+//        print("STR = \(String(describing: testEndString))")
+
         XCTAssertNotNil(testEndString)
-    }
+        XCTAssertTrue(testEndString == testString,  "We should get valid string: \(testString).")
+   }
     
-    func testInitRepoItem(){
-        let repo = RepoItem(name: "facebook", full_name: "facebook/codemod", created_at: "", stars: 5, forks: 5, description: "")
-        
-        XCTAssertNotNil(repo)
-    }
  
     
 }

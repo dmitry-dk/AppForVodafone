@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422DBDBF2217444000FDF7D2 /* ReposDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DBDBE2217444000FDF7D2 /* ReposDataController.swift */; };
+		422DBDC02217444000FDF7D2 /* ReposDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DBDBE2217444000FDF7D2 /* ReposDataController.swift */; };
 		4266B77B2208FA8700435CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B77A2208FA8700435CA9 /* AppDelegate.swift */; };
 		4266B7802208FA8700435CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4266B77E2208FA8700435CA9 /* Main.storyboard */; };
 		4266B7822208FA8D00435CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4266B7812208FA8D00435CA9 /* Assets.xcassets */; };
@@ -24,11 +26,13 @@
 		4266B7AE2208FBB600435CA9 /* ViewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A72208FBB600435CA9 /* ViewItemController.swift */; };
 		4266B7AF2208FBB600435CA9 /* ViewLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A82208FBB600435CA9 /* ViewLoginController.swift */; };
 		4266B7B02208FBB600435CA9 /* ViewLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A82208FBB600435CA9 /* ViewLoginController.swift */; };
-		4266B7B12208FBB600435CA9 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A92208FBB600435CA9 /* Repositories.swift */; };
-		4266B7B22208FBB600435CA9 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A92208FBB600435CA9 /* Repositories.swift */; };
+		4266B7B12208FBB600435CA9 /* GitHubRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A92208FBB600435CA9 /* GitHubRequestManager.swift */; };
+		4266B7B22208FBB600435CA9 /* GitHubRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7A92208FBB600435CA9 /* GitHubRequestManager.swift */; };
 		4266B7B32208FBB600435CA9 /* RepoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7AA2208FBB600435CA9 /* RepoItem.swift */; };
 		4266B7B42208FBB600435CA9 /* RepoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266B7AA2208FBB600435CA9 /* RepoItem.swift */; };
 		4266B7B52209104100435CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4266B77E2208FA8700435CA9 /* Main.storyboard */; };
+		42FFC5D622181CEE00015FCB /* ReposDataDataControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFC5D522181CEE00015FCB /* ReposDataDataControllerTests.swift */; };
+		42FFC5D82218281800015FCB /* RepoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFC5D72218281800015FCB /* RepoItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		422DBDBE2217444000FDF7D2 /* ReposDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposDataController.swift; sourceTree = "<group>"; };
 		4266B7772208FA8700435CA9 /* AppForVodafone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForVodafone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4266B77A2208FA8700435CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4266B77F2208FA8700435CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,8 +65,10 @@
 		4266B7A62208FBB600435CA9 /* ViewListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewListController.swift; sourceTree = "<group>"; };
 		4266B7A72208FBB600435CA9 /* ViewItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewItemController.swift; sourceTree = "<group>"; };
 		4266B7A82208FBB600435CA9 /* ViewLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLoginController.swift; sourceTree = "<group>"; };
-		4266B7A92208FBB600435CA9 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		4266B7A92208FBB600435CA9 /* GitHubRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubRequestManager.swift; sourceTree = "<group>"; };
 		4266B7AA2208FBB600435CA9 /* RepoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoItem.swift; sourceTree = "<group>"; };
+		42FFC5D522181CEE00015FCB /* ReposDataDataControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposDataDataControllerTests.swift; sourceTree = "<group>"; };
+		42FFC5D72218281800015FCB /* RepoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +112,8 @@
 			children = (
 				4266B77A2208FA8700435CA9 /* AppDelegate.swift */,
 				4266B7AA2208FBB600435CA9 /* RepoItem.swift */,
-				4266B7A92208FBB600435CA9 /* Repositories.swift */,
+				422DBDBE2217444000FDF7D2 /* ReposDataController.swift */,
+				4266B7A92208FBB600435CA9 /* GitHubRequestManager.swift */,
 				4266B7A72208FBB600435CA9 /* ViewItemController.swift */,
 				4266B7A62208FBB600435CA9 /* ViewListController.swift */,
 				4266B7A82208FBB600435CA9 /* ViewLoginController.swift */,
@@ -127,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				4266B78F2208FA8D00435CA9 /* AppForVodafonTests.swift */,
+				42FFC5D522181CEE00015FCB /* ReposDataDataControllerTests.swift */,
+				42FFC5D72218281800015FCB /* RepoItemTests.swift */,
 				4266B7912208FA8D00435CA9 /* Info.plist */,
 			);
 			path = AppForVodafoneTests;
@@ -241,7 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4266B7AF2208FBB600435CA9 /* ViewLoginController.swift in Sources */,
-				4266B7B12208FBB600435CA9 /* Repositories.swift in Sources */,
+				4266B7B12208FBB600435CA9 /* GitHubRequestManager.swift in Sources */,
+				422DBDBF2217444000FDF7D2 /* ReposDataController.swift in Sources */,
 				4266B7B32208FBB600435CA9 /* RepoItem.swift in Sources */,
 				4266B7AD2208FBB600435CA9 /* ViewItemController.swift in Sources */,
 				4266B7AB2208FBB600435CA9 /* ViewListController.swift in Sources */,
@@ -254,9 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4266B7B02208FBB600435CA9 /* ViewLoginController.swift in Sources */,
-				4266B7B22208FBB600435CA9 /* Repositories.swift in Sources */,
+				4266B7B22208FBB600435CA9 /* GitHubRequestManager.swift in Sources */,
+				422DBDC02217444000FDF7D2 /* ReposDataController.swift in Sources */,
 				4266B7B42208FBB600435CA9 /* RepoItem.swift in Sources */,
 				4266B7AE2208FBB600435CA9 /* ViewItemController.swift in Sources */,
+				42FFC5D82218281800015FCB /* RepoItemTests.swift in Sources */,
+				42FFC5D622181CEE00015FCB /* ReposDataDataControllerTests.swift in Sources */,
 				4266B7AC2208FBB600435CA9 /* ViewListController.swift in Sources */,
 				4266B7902208FA8D00435CA9 /* AppForVodafonTests.swift in Sources */,
 			);
@@ -343,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -397,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -411,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppForVodafone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -428,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppForVodafone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
